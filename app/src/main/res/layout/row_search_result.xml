@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical"
+    android:background="@drawable/background_search_spinner_set_row">
+
+    <ImageView
+        android:layout_marginTop="14dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/vehicle_main_image"
+        android:layout_marginRight="24dp"
+        android:src="@drawable/vehicle_placeholder"/>
+    <TextView
+        android:layout_marginTop="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/vehicle_main_image"
+        android:text="Toyota Hi Ace 2015"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:id="@+id/vehicle_model_txt"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vehicle_model_txt"
+        android:layout_toRightOf="@id/vehicle_main_image"
+        android:layout_marginTop="5dp"
+        android:text="Number"
+        android:id="@+id/vehicle_number_txt"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/vehicle_secondary_image_1"
+        android:layout_toRightOf="@id/vehicle_main_image"
+        android:layout_alignBottom="@id/vehicle_main_image"
+        android:src="@drawable/vehicle_placeholder"
+        android:layout_marginRight="5dp"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/vehicle_secondary_image_2"
+        android:layout_toRightOf="@id/vehicle_secondary_image_1"
+        android:layout_alignBottom="@id/vehicle_main_image"
+        android:src="@drawable/vehicle_placeholder"
+        android:layout_marginRight="5dp"/>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/vehicle_secondary_image_3"
+        android:layout_toRightOf="@id/vehicle_secondary_image_2"
+        android:layout_alignBottom="@id/vehicle_main_image"
+        android:src="@drawable/vehicle_placeholder"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="-10dp"
+        android:layout_alignBottom="@id/vehicle_main_image"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/info_icon"
+        />
+
+</RelativeLayout>

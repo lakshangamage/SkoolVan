@@ -205,6 +205,7 @@ public class LoginActivity extends AppCompatActivity {
                 }else{
 
                     Log.d("Login Failure!", json.getString(Tags.TAG_MESSAGE));
+                    onLoginFailed();
                     //Toast.makeText(Login.this, "Invalid login details", Toast.LENGTH_LONG).show();
                     return json.getString(Tags.TAG_MESSAGE);
 
@@ -220,7 +221,6 @@ public class LoginActivity extends AppCompatActivity {
         protected void onPostExecute(String file_url) {
             // dismiss the dialog once product deleted
             pDialog.dismiss();
-            onLoginFailed();
             if (file_url != null){
                 Toast.makeText(LoginActivity.this, file_url, Toast.LENGTH_LONG).show();
             }
